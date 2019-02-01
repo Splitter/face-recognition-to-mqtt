@@ -15,4 +15,7 @@ It consists of 3 files.
 * [dlib](http://dlib.net/) - deep learning library
 * [face_recognition](https://github.com/ageitgey/face_recognition) - python face recognition library
 * [paho-mqtt](https://pypi.org/project/paho-mqtt/) - MQTT module for python
+* [picamera](https://picamera.readthedocs.io/en/release-1.13/) - picamera module for python
+* [numpy](http://www.numpy.org/) - numpy python library
+
 
