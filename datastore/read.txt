@@ -1,0 +1,2 @@
+Nothing should be in the root of this directory.
+Images for unique users should be organized into their own directories here, where the names of the directories are the name of unique person/user
