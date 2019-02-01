@@ -1,9 +1,8 @@
 # Face Recognition to MQTT
 
-This is not meant to be the only method of presence detection. It is built for and tested on a piZero with picamera but should work with any pi. Its simple in function, if a face it recognizes crosses through its view it fires off an mqtt message saying it detected the person by name. Then in you handle the rest in your prefered home automation setup.
+This is not meant to be the only method of presence detection. It is built for and tested on a piZero with picamera but should work with any pi. Its simple in function, if a face it recognizes crosses through its view it fires off an mqtt message saying it detected the person by name. Then you handle the rest in your prefered home automation setup.
 
-For anyone who has messed with presence detection methods in homebrew home automation setups most options are not completey accurate. Layering the various detection methods is the way improves things greatly. This is just meant to be another layer in that stack.
-
+For anyone who has messed with presence detection methods in homebrew home automation setups most options are not completey accurate. Layering the various detection methods is a way improves things greatly. This is just meant to be another layer in that stack.
 
 
 ### Usage:
