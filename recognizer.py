@@ -62,16 +62,14 @@ def recognizeToMQTT():
         for faceEncoding in faceEncodings:
             #check for match
             matchIdxs = face_recognition.compare_faces(data["encodings"], faceEncoding)
-            if True in matchIdxs:
-                matches = []
-                for index in matchIdxs:
+            for index in matchIdxs:
+                if matchIdxs[index] == True:     #match found so send mqtt message     
                     name = str(data["names"][index])
-                    if matchIdxs[index] == True and name not in matches:                        
-                        matches.append(name)
-                        print("User detected {}!".format(name))
-                        mqttClient.publish( mqttTopicPrefix + name )
+                    print("User detected {}!".format(name))
+                    mqttClient.publish( mqttTopicPrefix + name )
+                    break
 
-    
+
 if __name__ == "__main__":
 	
     print("\n\n\nFACE RECOGNITION TO MQTT - main face recognition")     
